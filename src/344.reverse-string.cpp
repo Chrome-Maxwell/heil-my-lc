@@ -3,17 +3,19 @@
  *
  * [344] Reverse String
  */
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-    void reverseString(vector<char>& s) {
+    void reverseString(vector<char> &s)
+    {
         int l = 0, r = s.size() - 1;
-        while(l < r) {
+        while (l < r)
+        {
             swap(s[l++], s[r--]);
         }
     }
 };
 // @lc code=end
-

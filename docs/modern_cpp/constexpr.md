@@ -15,4 +15,4 @@ public:
 
 - `constexpr` functions: TBD
   
-> Read more:  [cppReference](https://en.cppreference.com/w/cpp/language/constexpr)
+> Read more: [cppReference](https://en.cppreference.com/w/cpp/language/constexpr)

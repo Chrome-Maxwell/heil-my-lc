@@ -23,14 +23,19 @@ using namespace std;
 //     ListNode(int x) : val(x), next(nullptr) {}
 //     ListNode(int x, ListNode *next) : val(x), next(next) {}
 // };
-class Solution {
+class Solution
+{
 public:
-    ListNode* reverseList(ListNode* head) {
-        if(head == NULL) return NULL;
-        else if(head->next == NULL) return head;
+    ListNode *reverseList(ListNode *head)
+    {
+        if (head == NULL)
+            return NULL;
+        else if (head->next == NULL)
+            return head;
         ListNode *prev = NULL;
         ListNode *curr = head;
-        while(curr != NULL) {
+        while (curr != NULL)
+        {
             ListNode *next = curr->next;
             curr->next = prev;
             prev = curr;
@@ -40,4 +45,3 @@ public:
     }
 };
 // @lc code=end
-

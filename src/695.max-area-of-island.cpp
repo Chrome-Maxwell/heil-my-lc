@@ -15,21 +15,24 @@ private:
     int dimX;
     int maxArea;
     vector<bool> visited;
-    int explore(vector<vector<int>>& grid, int y, int x)
+    int explore(vector<vector<int>> &grid, int y, int x)
     {
         if (y < 0 || y >= dimY || x < 0 || x >= dimX || grid[y][x] == 0)
         {
             return 0; // reach the grid boundary
         }
-        if(visited[y * dimX + x] == false) {
+        if (visited[y * dimX + x] == false)
+        {
             visited[y * dimX + x] = true;
             int area = 1;
-            for(int i = 0; i < 4; i++) {
+            for (int i = 0; i < 4; i++)
+            {
                 area += explore(grid, y + dy[i], x + dx[i]);
-            }    
+            }
             return area;
         }
-        else return 0;
+        else
+            return 0;
     }
 
 public:
@@ -45,7 +48,6 @@ public:
             {
                 if (grid[y][x] == 1 && visited[y * dimX + x] == false)
                     maxArea = max(explore(grid, y, x), maxArea);
-
             }
         }
         return maxArea;

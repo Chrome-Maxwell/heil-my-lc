@@ -35,7 +35,8 @@ public:
         {
             p2 = p2->next;
         }
-        if(p2->next == nullptr) return head->next;
+        if (p2->next == nullptr)
+            return head->next;
         while (p2->next != nullptr)
         {
             p2 = p2->next;

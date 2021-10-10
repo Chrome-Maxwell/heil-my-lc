@@ -3,7 +3,7 @@
  *
  * [136] Single Number
  */
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 // @lc code=start
 class Solution

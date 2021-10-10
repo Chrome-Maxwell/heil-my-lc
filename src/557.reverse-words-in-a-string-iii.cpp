@@ -17,7 +17,8 @@ public:
             while (r != s.end() && *r != ' ')
                 ++r;
             reverse(l, r);
-            if(r != s.end()) l = ++r; // prevent heap buffer overflow.
+            if (r != s.end())
+                l = ++r; // prevent heap buffer overflow.
         }
         return s;
     }

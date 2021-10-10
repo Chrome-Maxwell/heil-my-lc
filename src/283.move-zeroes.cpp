@@ -11,7 +11,7 @@ class Solution
 public:
     void moveZeroes(vector<int> &nums)
     {
-        
+
         vector<int>::iterator l = nums.end(), r;
         for (auto i = nums.begin(); i != nums.end(); ++i)
         {
@@ -21,7 +21,8 @@ public:
                 break;
             }
         }
-        if(l==nums.end()) return;
+        if (l == nums.end())
+            return;
         for (r = l + 1; r != nums.end(); ++r)
         {
             if (*r != 0)

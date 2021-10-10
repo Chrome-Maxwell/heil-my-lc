@@ -3,16 +3,20 @@
  *
  * [169] Majority Element
  */
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 // @lc code=start
-class Solution {
+class Solution
+{
 public:
-    int majorityElement(vector<int>& nums) {
+    int majorityElement(vector<int> &nums)
+    {
         int cnt = 0, ans = nums[0];
-        for(auto i : nums) {
-                ans == i? cnt++ : cnt--;
-            if(cnt==0) {
+        for (auto i : nums)
+        {
+            ans == i ? cnt++ : cnt--;
+            if (cnt == 0)
+            {
                 ans = i;
                 cnt = 1;
             }
@@ -21,4 +25,3 @@ public:
     }
 };
 // @lc code=end
-
